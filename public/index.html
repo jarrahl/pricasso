@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="picasso.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Pricasso</title>
+    </head>
+    <body>
+      <div class="section"><div class="row">
+        <div class="col s6">
+          <h5 class="header teal-text text-darken-2">Direction</h5>
+          <div class="row">
+            <div class="col s1"></div>
+            <div class="col s1">
+              <button id="directionUp" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_upward</i>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s1">
+              <button id="directionLeft" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_back</i>
+              </button>
+            </div>
+            <div class="col s1"> </div>
+            <div class="col s1">
+              <button id="directionRight" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s1"></div>
+            <div class="col s1">
+              <button id="directionDown" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_downward</i>
+              </button>
+            </div>
+          </div>
+          <canvas id="canvas" width="200" height="200"></canvas>
+        </div>
+        <div class="col s6">
+          <h5 class="header teal-text text-darken-2">Color</h4>
+          <div class="row">
+            <div class="col s2">
+              <button id="colorLeft" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_back</i>
+              </button>
+            </div>
+            <div class="col s1"></div>
+            <div class="col s2">
+              <button id="colorRight" class="btn waves-effect waves-light" >
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+                <div id="pickedColour">
+              <i class="material-icons">colorize</i>
+            </div>
+            </div>
+          </div>
+          <div class="row" id="canvasDiv">
+            <canvas id="wheel" width="200" height="200" style="border:1px solid #000000;"></canvas>
+            <div style="display:none;">
+              <img id="wheel-image" src="wheel.png"
+                  width="200" height="200">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5 class="header teal-text text-darken-2 ">Name</h4>
+              <input type="text" id="username"> <button id="changeNameButton" class="btn waves-effect waves-light">Change</button>
+              <br>
+              <div id="newsDiv"></div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+      <script src="picasso.js"></script>
+    </body>
+</html>

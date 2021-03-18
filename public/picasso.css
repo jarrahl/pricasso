@@ -1,0 +1,45 @@
+.dirDiv {
+    float:left;
+    clear:left;
+}
+.dirBarDiv {
+    float:left;
+    height:20px;    
+    border:1px solid black;
+    width:200px;
+}
+.dirBar {
+    height:20px;
+    background-color:blue;
+}
+
+* {
+    touch-action: manipulation;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    height: 60px !important;
+
+}
+body {
+    height: 100%;
+}
+span {
+    width: 20px;
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+#newsDiv {
+    text-align: left;
+}
+#pickedColour {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
